@@ -1,51 +1,171 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+<!-- ip address 10.0.0.9  port 90-->
+  <meta name="description" content="Udacity Responsive Images course project" />
+  <meta name="author" content="//samdutton.com">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-  <title>Framework Test Page</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <meta itemprop="name" content="Udacity Responsive Images course project">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta id="theme-color" name="theme-color" content="#307699">
+  <meta charset="utf-8">
+
+  <!-- loads the Udacity Feedback extension -->
+  <meta name="udacity-grader" content="http://udacity.github.io/responsive-images/project/project-grader.json" unit-tests="http://udacity.github.io/responsive-images/project/project-grader.js">
+
+  <base target="_blank">
+
+  <title>My responsive blog: picture story</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic' rel='stylesheet' type='text/css'>
+
+  <link href="https://fonts.googleapis.com/css?family=Trirong:500" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'> 
+
+  <link rel="stylesheet" href="css/main.css" />
+<style>
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  width: 25%;
+}
+</style>
 </head>
+
 <body>
-  <div class="grid">
+<div class="container">
+  
+  <article>
     <header>
-  <div class="row">
-    <div class="col-6">
-      <img src="img/english-733876.svg" class="logo" alt="placeholder1">
-    </div>
-    <div class="col-6">
-      <h1 class="right">Michael Speranza</h1>
-      <h4 class="right">Front-end dev</h4>
-    </div>
+      <img src="images_2w/lotus.svg" class="logo" height:"50px" width="50px">
+    </header>
+
+    <h1>My responsive blog</h1>
+
+  <figure>
+    <picture>
+      <source media="(min-width: 750px)" srcset="images_2w/still_life.jpg 1000w"/>
+      <source media="max-width: 749px)" srcset"images_1w/still_life-500normal.jpg 500w"/>
+    <img src="images_2w/still_life.jpg"
+    alt="A picture of a table with flowers, oranges, bananas, calculator, phone, tape."
+    >
+</picture>
+<figcaption>A vibrant table</figcaption>
+</figure>
+
+    <h2>My story</h2>
+    
+    <p>I love cheese, especially manchego swiss.  &#9786;Fromage queso jarlsberg cheesy feet emmental cottage cheese camembert de normandie bocconcini. Cottage cheese everyone loves cauliflower cheese rubber cheese squirty cheese halloumi cow fondue. Bocconcini cheese and biscuits everyone loves fondue red leicester st. agur blue cheese rubber cheese ricotta. Cheesy grin mozzarella.</p>
+    
+    <figure>
+      <picture>
+      <source media="(min-width: 750px)" srcset="images_2w/horses.jpg 1000w"/>
+      <source media="images_1w/horses-500normal.jpg 500w"/>  
+    <img src="images_2w/horses.jpg" alt="a picture of horses">
+    <figcaption>Horses</figcaption>
+  </picture>
+  </figure>
+    
+    <p>Bocconcini swiss cut the cheese. Manchego boursin smelly cheese cheesy grin squirty cheese mozzarella cheddar hard cheese. Manchego roquefort camembert de normandie cheese slices mascarpone cow cheesy feet airedale. Port-salut jarlsberg gouda port-salut port-salut cheese on toast.</p>
+    
+    <p>Manchego cheese strings hard cheese. Say cheese swiss cheese strings squirty cheese mozzarella feta the big cheese halloumi. Cheddar cheese and biscuits cut the cheese queso hard cheese red leicester parmesan st. agur blue cheese. Smelly cheese caerphilly hard cheese cream cheese cream cheese the big cheese feta squirty cheese. Babybel fromage edam lancashire.</p>
+  
+    <figure>
+      <picture>
+        <source media="(min-width: 750px)" srcset="images_2w/volt.jpg 1000w"/>
+      <source media="images_1w/volt-500normal.jpg 500w"/>  
+    <img src="images_2w/volt.jpg" alt="a picture of the word VOLT">
+    <figcaption>volt</figcaption>
+  </picture>
+  </figure>
+    <source media="(min-width: 750px)" srcset="images_2w/volt.jpg 1000w"/>
+      <source media="images_1w/volt-500normal.jpg 500w"/>  
+    <p>Edam parmesan smelly cheese. Dolcelatte say cheese cheesy feet lancashire cow boursin stinking bishop brie. Stilton cheese strings say cheese pecorino cheeseburger fromage frais cauliflower cheese manchego. St. agur blue cheese ricotta stinking bishop queso camembert de normandie manchego cheese triangles fondue. Gouda.</p>
+    
+    <picture>
+    <figure>
+      <source media="(min-width: 750px)" srcset="images_2w/volt.jpg 1000w"/>
+      <source media="images_1w/volt-500normal.jpg 500w"/>  
+    <img src="images_2w/cockatoos.jpg" srcset="images_1w/cockatoos-500normal.jpg 500w, images_2w/cockatoos.jpg 1000w"
+    alt="two cockatoos balancing on a ledge"
+    >
+    <figcaption>Cockatoos</figcaption>
+    </figure>
+  </picture>
+    
+    <p>Babybel cream cheese cheese on toast. Brie fromage swiss cheese and biscuits hard cheese babybel bocconcini brie. Cheesy grin swiss cheese strings paneer lancashire cauliflower cheese cheese on toast caerphilly. Queso queso cheese and wine taleggio mascarpone cheeseburger.</p>
+    
+    <p>Rubber cheese lancashire stinking bishop. Paneer bocconcini bocconcini melted cheese brie blue castello mascarpone when the cheese comes out everybody's happy. Mozzarella st. agur blue cheese hard cheese smelly cheese gouda ricotta hard cheese cheese and wine. Fromage frais pecorino airedale caerphilly danish fontina everyone loves.</p>
+    
+    <p>Cheddar the big cheese fromage frais. Stinking bishop dolcelatte cow pecorino who moved my cheese bavarian bergkase cheese slices who moved my cheese. Cheeseburger roquefort cheese and biscuits queso queso smelly cheese roquefort red leicester. Fromage squirty cheese macaroni cheese melted cheese stilton roquefort cheese and biscuits.</p>
+    
+    <p>St. agur blue cheese cheese and wine say cheese. Goat cottage cheese brie cheese triangles say cheese when the cheese comes out everybody's happy stinking bishop dolcelatte. Parmesan say cheese cream cheese goat cauliflower cheese st. agur blue cheese cheese slices hard cheese. Cheese triangles.</p>
+    
+    <picture>
+    <figure>
+      <source media="(min-width: 750px)" srcset="images_2w/volt.jpg 1000w"/>
+      <source media="images_1w/volt-500normal.jpg 500w"/>  
+    <img src="images_2w/postcard.jpg" srcset="images_1w/postcard-500normal.jpg 500w, images_2w/postcard.jpg 1000w" alt="an old looking postcard">
+    <figcaption>postcard</figcaption>
+    </figure>
+  </picture>
+    
+    <p>Pecorino pepper jack cheesy feet. Smelly cheese cauliflower cheese fromage halloumi cream cheese who moved my cheese fromage fondue. Feta danish fontina cheesy grin mozzarella fromage cheesy grin airedale paneer. Cheddar halloumi cheese and biscuits jarlsberg cheese and biscuits cheese and biscuits squirty cheese.</p>
+    
+    <figure>
+      <picture>
+      <source media="(min-width: 750px)" srcset="images_2w/grasshopper.jpg 1000w"/>
+      <source media="images_1w/grasshopper-500normal.jpg 500w"/>  
+    <img src="images_2w/grasshopper.jpg" alt="a zoom in on a grasshopper">
+    <figcaption>grasshopper</figcaption>
+  </picture>
+  </figure>
+    
+    <p>Babybel cream cheese cheese on toast. Brie fromage swiss cheese and biscuits hard cheese babybel bocconcini brie. Cheesy grin swiss cheese strings paneer lancashire cauliflower cheese cheese on toast caerphilly. Queso queso cheese and wine taleggio mascarpone cheeseburger.</p>
+    
+    <figure>
+      <picture>
+      <source media="(min-width: 750px)" srcset="images_2w/sfo.jpg 1000w"/>
+      <source media="images_1w/sfo-500normal.jpg 500w"/>  
+    <img src="images_2w/sfo.jpg" alt="an aerial shot from a plane over a burned field">
+    <figcaption>sfo</figcaption>
+  </picture>
+  </figure>
+    
+    <p>Say cheese swiss cheesy grin. Cheese on toast queso bocconcini cheeseburger fondue manchego smelly cheese port-salut. Cream cheese cheese and wine airedale cheeseburger chalk and cheese cauliflower cheese fondue smelly cheese. Queso manchego.</p>
+    
+    <figure>
+      <picture>
+      <source media="(min-width: 750px)" srcset="images_2w/rosella.jpg 1000w"/>
+      <source media="images_1w/rosella-500normal.jpg 500w"/>  
+    <img src="images_2w/rosella.jpg" alt="a rosella, a bird near a stick and rock, bright red with blue and black ">
+    <figcaption>rosella</figcaption>
+  </picture>
+  </figure>
+
+    <p>Paneer st. agur blue cheese bocconcini. The big cheese chalk and cheese cheese and biscuits cream cheese cheese triangles mascarpone everyone loves rubber cheese. Stinking bishop manchego the big cheese lancashire hard cheese the big cheese danish fontina squirty cheese. Cheesy feet croque monsieur boursin squirty cheese cheddar boursin boursin pepper jack. Squirty cheese halloumi camembert de normandie macaroni cheese.</p>
+  
+  </article>
+
+  <br>
+
+  <footer>
+
+  <div>
+
+  <ul>
+  <li><a href="//github.com/udacity/responsive-images/tree/master/project/start" title="View source for this page on GitHub" id="viewSource" class="zocial-github">Source on GitHub</a></li>
+  <li><a href="http://twitter.com" class="zocial-twitter">Twitter</a></li>
+  <li><a href="http://facebook.com" class="zocial-facebook">Facebook</a></li>
+  <li><a href="http://digg.com" class="zocial-digg">Digg</a></li>
+  <li><a href="https://plus.google.com/" class="zocial-googleplus">Googleplus</a></li>
+  </ul>
   </div>
-</header>
-  <div class="row">
-      <div class="col-12">
-        <img src="http://placehold.it/900x300" class="img-responsive" alt="placeholder2">
-      </div>
-  </div>
-  <div class="row border">
-    <h2 class="row marginleft light">Featured Work</h2>
-    <div class="col-4 center">
-      <img src="http://placehold.it/300x100" alt="placeholder3" class="img-responsive margin">
-      <h3 class="italic">Project 1</h3>
-      <p><a href="www.github.com">Link to Project</a></p>
-    </div>
-    <div class="col-4 center">
-      <img src="http://placehold.it/300x100" alt="placeholder4" class="img-responsive margin">
-      <h3 class="italic">Project 2</h3>
-      <p><a href="www.github.com">Link to Project</a></p>
-    </div>
-    <div class="col-4 center">
-      <img src="http://placehold.it/300x100" alt="placeholder5" class="img-responsive margin">
-      <h3 class="italic">Project 3</h3>
-      <p><a href="www.github.com">Link to Project</a></p>
-    </div>
-  </div>
+
+  </footer>
 </div>
-<footer>
-  <p>Contact me @ my <a href="mikesperanza34@gmail.com">email</a></p>
-</footer>
 </body>
 </html>
